@@ -158,7 +158,7 @@ function decode (inputString){
                     temp[iCtr] = 'Z';
                     break;
                 case 'x':
-                    temp[iCtr] = 'Z';
+                    temp[iCtr] = 'z';
                     break;
                 case ' ':
                     temp[iCtr] = ' ';
@@ -186,6 +186,15 @@ function decode (inputString){
                		break;
                	case '?':
                		temp[iCtr] = '?';
+               		break;
+               	case '(':
+               		temp[iCtr] = '(';
+               		break;
+               	case ')':
+               		temp[iCtr] = ')';
+               		break;
+               	case '"':
+               		temp[iCtr] = '"';
                		break;
 		}
 	}
